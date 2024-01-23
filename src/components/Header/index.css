@@ -1,0 +1,107 @@
+nav{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    background-color: rgb(54, 53, 53) ;
+    border-bottom: 1px solid rgb(97, 96, 96);
+}
+
+.logo{
+    font-size: 60px;
+    color: white;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.logo-heading{
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 35px;
+}
+
+.second-heading{
+    color: #16a5d5;
+    font-family: 'Catamaran', sans-serif;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-ul{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-ul li{
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.nav-ul li:hover{
+    color: #16a5d5;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+.menu-icon{
+    color: white;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.sm-nav{
+    background-color: #16a5d5;
+    text-align: right;
+    padding: 30px;
+    display: none;
+}
+
+.sm-nav p {
+    color: white;
+    font-family: 'poppins';
+    padding-top: 10px;
+    font-size: 18px;
+}
+.menu-btn{
+    background-color: transparent;
+    border-width: 0px;
+}
+
+@media screen and (max-width:768px) {
+
+    .lg-nav{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .sm-nav{
+        display: block;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:567px) {
+
+    .logo-heading{
+        font-size: 22px ;
+    }
+    .logo{
+        font-size: 24px;
+    }
+}
